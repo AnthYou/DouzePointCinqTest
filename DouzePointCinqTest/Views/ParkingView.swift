@@ -16,6 +16,8 @@ struct ParkingView: View {
         GridItem(.flexible())
     ]
 
+    @State private var showingAlert = false
+
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -36,8 +38,20 @@ struct ParkingView: View {
             LazyVGrid(columns: columns) {
                 ForEach(parking.gates) { gate in
                     VStack(spacing: 20) {
-                        Text(gate.name)
-                            .font(.headline)
+                        HStack {
+                            Text(gate.name)
+                                .font(.headline)
+
+                            Spacer()
+
+                            Button {
+                                self.showingAlert = true
+                            } label: {
+                                Image(systemName: "info.circle")
+                            }
+
+                        }
+
                         Image("garage")
                             .resizable()
                             .if(colorScheme == .dark) { view in
@@ -57,6 +71,13 @@ struct ParkingView: View {
             }
         }
         .navigationTitle(parking.name)
+        .alert(isPresented: $showingAlert) {
+            Alert(
+                title: Text("Information"),
+                message: Text("Pour ouvrir le portail, tapez sur \"Ouvrir\" puis appellez le numéro qui s'affiche. Le portail s'ouvrira à la réception de l'appel."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
     }
 }
 
