@@ -20,21 +20,22 @@ struct ParkingView: View {
 
     var body: some View {
         VStack {
-            VStack(alignment: .leading, spacing: 7) {
-                Label(parking.address, systemImage: "mappin.and.ellipse")
-                    .multilineTextAlignment(.leading)
-                Label("Parking privé accessible par téléphone ou badge", systemImage: "lock.rotation")
-                Label("Précommande", systemImage: "clock.arrow.circlepath")
-                Label("Nouveau parking 12.5", systemImage: "info.circle")
+            VStack {
+                VStack(alignment: .leading, spacing: 7) {
+                    Label(parking.address, systemImage: "mappin.and.ellipse")
+                        .multilineTextAlignment(.leading)
+                    Label("Parking privé accessible par téléphone ou badge", systemImage: "lock.rotation")
+                    Label("Précommande", systemImage: "clock.arrow.circlepath")
+                    Label("Nouveau parking 12.5", systemImage: "info.circle")
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .strokeBorder(Color.primary, lineWidth: 1)
+                )
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .strokeBorder(Color.primary, lineWidth: 1)
-            )
-
-            Spacer()
 
             LazyVGrid(columns: columns) {
                 ForEach(parking.gates) { gate in
@@ -65,13 +66,15 @@ struct ParkingView: View {
                     .frame(maxWidth: 150)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
-                            .strokeBorder(Color.primary, lineWidth: 1)
-
+                            .strokeBorder(Color.black, lineWidth: 1)
                     )
                 }
             }
+            .padding(.bottom)
+
+            MapView(annotations: [parking.annotation])
+                .edgesIgnoringSafeArea(.all)
         }
-        .padding()
         .navigationTitle(parking.name)
         .alert(isPresented: $showingAlert) {
             Alert(

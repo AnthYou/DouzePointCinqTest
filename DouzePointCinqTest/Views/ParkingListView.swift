@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ParkingListView: View {
     var body: some View {
-        List {
-            ForEach(Parking.allParkings) { parking in
-                NavigationLink(parking.name, destination: { ParkingView(parking: parking) })
+        VStack {
+            List {
+                ForEach(Parking.allParkings) { parking in
+                    NavigationLink(parking.name, destination: { ParkingView(parking: parking) })
+                }
             }
+
+            MapView(annotations: Parking.allParkingsAnnotations)
+                .edgesIgnoringSafeArea(.all)
         }
         .navigationTitle("Parkings")
     }
@@ -20,6 +26,8 @@ struct ParkingListView: View {
 
 struct ParkingListView_Previews: PreviewProvider {
     static var previews: some View {
-        ParkingListView()
+        NavigationView {
+            ParkingListView()
+        }
     }
 }
