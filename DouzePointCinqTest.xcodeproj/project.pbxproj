@@ -15,6 +15,7 @@
 		DE9BFC5F2729CA3C00426952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9BFC5E2729CA3C00426952 /* Preview Assets.xcassets */; };
 		DEB6977D272AD4370053F93E /* ParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6977C272AD4370053F93E /* ParkingListView.swift */; };
 		DEB6977F272AD49D0053F93E /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6977E272AD49D0053F93E /* ParkingView.swift */; };
+		DEB69781272B0F550053F93E /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB69780272B0F550053F93E /* View+If.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DE9BFC5E2729CA3C00426952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEB6977C272AD4370053F93E /* ParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListView.swift; sourceTree = "<group>"; };
 		DEB6977E272AD49D0053F93E /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
+		DEB69780272B0F550053F93E /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				DE9BFC572729CA3900426952 /* DouzePointCinqTestApp.swift */,
 				DE518463272ABAA4005B4902 /* Views */,
 				DE51845E272AB45E005B4902 /* Models */,
+				DEB69782272B0F6B0053F93E /* Helpers */,
 				DE9BFC5B2729CA3C00426952 /* Assets.xcassets */,
 				DE9BFC5D2729CA3C00426952 /* Preview Content */,
 			);
@@ -93,6 +96,14 @@
 				DE9BFC5E2729CA3C00426952 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DEB69782272B0F6B0053F93E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEB69780272B0F550053F93E /* View+If.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				DE9BFC5A2729CA3900426952 /* ContentView.swift in Sources */,
 				DEB6977D272AD4370053F93E /* ParkingListView.swift in Sources */,
 				DE51845D272AB458005B4902 /* Parking.swift in Sources */,
+				DEB69781272B0F550053F93E /* View+If.swift in Sources */,
 				DEB6977F272AD49D0053F93E /* ParkingView.swift in Sources */,
 				DE518462272ABA3E005B4902 /* Gate.swift in Sources */,
 				DE9BFC582729CA3900426952 /* DouzePointCinqTestApp.swift in Sources */,
