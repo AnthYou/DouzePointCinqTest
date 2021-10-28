@@ -20,13 +20,14 @@ struct ParkingView: View {
 
     var body: some View {
         VStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 7) {
                 Label(parking.address, systemImage: "mappin.and.ellipse")
                     .multilineTextAlignment(.leading)
-                Label("Parking privé accessible par téléphone", systemImage: "lock.rotation")
+                Label("Parking privé accessible par téléphone ou badge", systemImage: "lock.rotation")
                 Label("Précommande", systemImage: "clock.arrow.circlepath")
                 Label("Nouveau parking 12.5", systemImage: "info.circle")
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 15)
@@ -70,6 +71,7 @@ struct ParkingView: View {
                 }
             }
         }
+        .padding()
         .navigationTitle(parking.name)
         .alert(isPresented: $showingAlert) {
             Alert(
