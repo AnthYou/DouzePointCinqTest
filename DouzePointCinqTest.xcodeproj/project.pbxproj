@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE51845D272AB458005B4902 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51845C272AB458005B4902 /* Parking.swift */; };
-		DE518460272AB4BB005B4902 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE51845F272AB4BB005B4902 /* Launch Screen.storyboard */; };
+		DE518462272ABA3E005B4902 /* Gate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518461272ABA3E005B4902 /* Gate.swift */; };
 		DE9BFC582729CA3900426952 /* DouzePointCinqTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BFC572729CA3900426952 /* DouzePointCinqTestApp.swift */; };
 		DE9BFC5A2729CA3900426952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BFC592729CA3900426952 /* ContentView.swift */; };
 		DE9BFC5C2729CA3C00426952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9BFC5B2729CA3C00426952 /* Assets.xcassets */; };
@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		DE51845C272AB458005B4902 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
-		DE51845F272AB4BB005B4902 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DE518461272ABA3E005B4902 /* Gate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gate.swift; sourceTree = "<group>"; };
 		DE9BFC542729CA3900426952 /* DouzePointCinqTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouzePointCinqTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9BFC572729CA3900426952 /* DouzePointCinqTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouzePointCinqTestApp.swift; sourceTree = "<group>"; };
 		DE9BFC592729CA3900426952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				DE51845C272AB458005B4902 /* Parking.swift */,
+				DE518461272ABA3E005B4902 /* Gate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -68,7 +69,6 @@
 				DE51845E272AB45E005B4902 /* Models */,
 				DE9BFC5B2729CA3C00426952 /* Assets.xcassets */,
 				DE9BFC5D2729CA3C00426952 /* Preview Content */,
-				DE51845F272AB4BB005B4902 /* Launch Screen.storyboard */,
 			);
 			path = DouzePointCinqTest;
 			sourceTree = "<group>";
@@ -139,7 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE518460272AB4BB005B4902 /* Launch Screen.storyboard in Resources */,
 				DE9BFC5F2729CA3C00426952 /* Preview Assets.xcassets in Resources */,
 				DE9BFC5C2729CA3C00426952 /* Assets.xcassets in Resources */,
 			);
@@ -154,6 +153,7 @@
 			files = (
 				DE9BFC5A2729CA3900426952 /* ContentView.swift in Sources */,
 				DE51845D272AB458005B4902 /* Parking.swift in Sources */,
+				DE518462272ABA3E005B4902 /* Gate.swift in Sources */,
 				DE9BFC582729CA3900426952 /* DouzePointCinqTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
