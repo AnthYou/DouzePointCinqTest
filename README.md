@@ -2,12 +2,12 @@
 Sample iOS app to open parking lot gates by phone calls.
 
 ## Screenshots (dark & light modes)
-![Main Screen!](images/dark-main.PNG "Main Screen")
-![Detail Screen!](images/dark-detail.PNG "Detail Screen")
-![Alert Screen!](images/dark-alert.PNG "Alert Screen")
-![Call Screen!](images/dark-call.PNG "Call Screen")
-![Main Screen!](images/light-main.PNG "Main Screen")
-![Detail Screen!](images/light-detail.PNG "Detail Screen")
+![Main Screen!](Images/dark-main.PNG "Main Screen")
+![Detail Screen!](Images/dark-detail.PNG "Detail Screen")
+![Alert Screen!](Images/dark-alert.PNG "Alert Screen")
+![Call Screen!](Images/dark-call.PNG "Call Screen")
+![Main Screen!](Images/light-main.PNG "Main Screen")
+![Detail Screen!](Images/light-detail.PNG "Detail Screen")
 
 ## How to use
 
