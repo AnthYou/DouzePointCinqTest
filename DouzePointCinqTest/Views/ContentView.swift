@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Résidence")
-            Link("Ouvrir le portail", destination: URL(string: "tel:+33601483989")!)
+        NavigationView {
+            ParkingListView()
         }
     }
 }

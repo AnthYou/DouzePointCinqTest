@@ -13,6 +13,7 @@
 		DE9BFC5A2729CA3900426952 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BFC592729CA3900426952 /* ContentView.swift */; };
 		DE9BFC5C2729CA3C00426952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9BFC5B2729CA3C00426952 /* Assets.xcassets */; };
 		DE9BFC5F2729CA3C00426952 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9BFC5E2729CA3C00426952 /* Preview Assets.xcassets */; };
+		DEB6977D272AD4370053F93E /* ParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB6977C272AD4370053F93E /* ParkingListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DE9BFC592729CA3900426952 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE9BFC5B2729CA3C00426952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9BFC5E2729CA3C00426952 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DEB6977C272AD4370053F93E /* ParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9BFC592729CA3900426952 /* ContentView.swift */,
+				DEB6977C272AD4370053F93E /* ParkingListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9BFC5A2729CA3900426952 /* ContentView.swift in Sources */,
+				DEB6977D272AD4370053F93E /* ParkingListView.swift in Sources */,
 				DE51845D272AB458005B4902 /* Parking.swift in Sources */,
 				DE518462272ABA3E005B4902 /* Gate.swift in Sources */,
 				DE9BFC582729CA3900426952 /* DouzePointCinqTestApp.swift in Sources */,
