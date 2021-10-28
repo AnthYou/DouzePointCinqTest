@@ -45,6 +45,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DE518463272ABAA4005B4902 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE9BFC592729CA3900426952 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DE9BFC4B2729CA3900426952 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9BFC572729CA3900426952 /* DouzePointCinqTestApp.swift */,
-				DE9BFC592729CA3900426952 /* ContentView.swift */,
+				DE518463272ABAA4005B4902 /* Views */,
 				DE51845E272AB45E005B4902 /* Models */,
 				DE9BFC5B2729CA3C00426952 /* Assets.xcassets */,
 				DE9BFC5D2729CA3C00426952 /* Preview Content */,
