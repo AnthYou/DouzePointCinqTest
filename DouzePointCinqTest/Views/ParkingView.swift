@@ -20,20 +20,22 @@ struct ParkingView: View {
 
     var body: some View {
         VStack {
-            VStack(alignment: .leading) {
-                Label(parking.address, systemImage: "mappin.and.ellipse")
-                    .multilineTextAlignment(.leading)
-                Label("Parking privé accessible par téléphone", systemImage: "lock.rotation")
-                Label("Précommande", systemImage: "clock.arrow.circlepath")
-                Label("Nouveau parking 12.5", systemImage: "info.circle")
+            VStack {
+                VStack(alignment: .leading, spacing: 7) {
+                    Label(parking.address, systemImage: "mappin.and.ellipse")
+                        .multilineTextAlignment(.leading)
+                    Label("Parking privé accessible par téléphone ou badge", systemImage: "lock.rotation")
+                    Label("Précommande", systemImage: "clock.arrow.circlepath")
+                    Label("Nouveau parking 12.5", systemImage: "info.circle")
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                        .strokeBorder(Color.primary, lineWidth: 1)
+                )
             }
             .padding()
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .strokeBorder(Color.primary, lineWidth: 1)
-            )
-
-            Spacer()
 
             LazyVGrid(columns: columns) {
                 ForEach(parking.gates) { gate in
@@ -64,11 +66,14 @@ struct ParkingView: View {
                     .frame(maxWidth: 150)
                     .overlay(
                         RoundedRectangle(cornerRadius: 15)
-                            .strokeBorder(Color.primary, lineWidth: 1)
-
+                            .strokeBorder(Color.black, lineWidth: 1)
                     )
                 }
             }
+            .padding(.bottom)
+
+            MapView(annotations: [parking.annotation])
+                .edgesIgnoringSafeArea(.all)
         }
         .navigationTitle(parking.name)
         .alert(isPresented: $showingAlert) {
@@ -85,21 +90,6 @@ struct ParkingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ParkingView(parking: Parking.allParkings.first!)
-        }
-    }
-}
-
-extension View {
-    /// Applies the given transform if the given condition evaluates to `true`.
-    /// - Parameters:
-    ///   - condition: The condition to evaluate.
-    ///   - transform: The transform to apply to the source `View`.
-    /// - Returns: Either the original `View` or the modified `View` if the condition is `true`.
-    @ViewBuilder func `if`<Content: View>(_ condition: @autoclosure () -> Bool, transform: (Self) -> Content) -> some View {
-        if condition() {
-            transform(self)
-        } else {
-            self
         }
     }
 }
