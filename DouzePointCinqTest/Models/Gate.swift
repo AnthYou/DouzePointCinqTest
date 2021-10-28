@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Gate {
+struct Gate: Identifiable {
+    let id: Int
     let name: String
     let phoneNumber: Int
 }

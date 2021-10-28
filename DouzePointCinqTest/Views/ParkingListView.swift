@@ -11,7 +11,7 @@ struct ParkingListView: View {
     var body: some View {
         List {
             ForEach(Parking.allParkings) { parking in
-                Text(parking.name)
+                NavigationLink(parking.name, destination: { ParkingView(parking: parking) })
             }
         }
         .navigationTitle("Parkings")
