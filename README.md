@@ -1,5 +1,5 @@
 # DouzePointCinq - Test app
-Sample iOS app to open parking lot gates by phone calls.
+Simple iOS app to open parking lot gates by phone calls.
 
 ## Screenshots (dark & light modes)
 ![Screenshots!](Images/screenshots.png "Screenshots")
