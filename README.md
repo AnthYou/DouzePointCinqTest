@@ -8,8 +8,8 @@ Simple iOS app to open parking lot gates by phone calls.
 
 ### Clone the project
 ```
-git clone git@github.com:AnthYou/DouzePointCinqTest.git
-cd DouzePointCinqTest
+$ git clone git@github.com:AnthYou/DouzePointCinqTest.git
+$ cd DouzePointCinqTest
 ```
 
 ### Open with Xcode
