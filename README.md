@@ -21,7 +21,7 @@ $ open DouzePointCinqTest.xcodeproj -a Xcode
 ```
 
 ### Connect your iPhone to your Mac
-As the simulator is not able to make phone calls, you will need a physical iPhone to use open the gates.
+As the simulator is not able to make phone calls, you will need a physical iPhone to open the gates.
 First, connect your iPhone to your mac and choose the device in the run destination menu.
 If you choose a real device, add your Apple ID in Accounts preferences and assign the project to a team on the Signing & Capabilities pane of the project editor.
 A single individual constitutes a one-person team.
